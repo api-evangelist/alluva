@@ -1,7 +1,26 @@
 aid: alluva
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/alluva.png
 name: Alluva
-description: Alluva is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'Alluva operates a global analyst marketplace centered on cryptocurrency
+  and digital-asset price predictions. Users forecast the future price of assets such
+  as Bitcoin and Ethereum across timeframes from 24 hours to six months, follow leading
+  analysts, and earn redeemable rewards for accurate forecasts with no upfront investment.
+  Asset pages surface detailed analysis and Buy/Hold/Sell recommendations. Alluva
+  also packages its predictive market data for B2B customers - data providers, media
+  houses, and financial institutions - with named clients including 500 Global, Refinitiv,
+  Thomson Reuters, Economic Times, and Times of India. The company is a 500 Global
+  portfolio company. No public API, developer portal, or SDK is published at this time.'
 url: https://raw.githubusercontent.com/api-evangelist/alluva/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,6 +33,12 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Cryptocurrency
+- Predictions
+- Market Data
+- Analytics
+- Financial Data
+- Blockchain
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/alluva-domain-security.yml
 - type: Website
   url: https://alluva.com
+- type: SignUp
+  url: https://app.alluva.com/signup
+- type: Support
+  url: mailto:hello@alluva.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
